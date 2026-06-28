@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neural Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <aside class="sidebar" aria-label="Game menu">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">NA</div>
+          <div>
+            <h1>Neural Arcade</h1>
+            <p>AI-powered mini games</p>
+          </div>
+        </div>
+
+        <nav class="game-list" id="gameList" aria-label="Choose a game"></nav>
+
+        <section class="scoreboard" aria-label="Session scores">
+          <h2>Session</h2>
+          <div class="score-grid">
+            <div>
+              <span id="wins">0</span>
+              <small>Wins</small>
+            </div>
+            <div>
+              <span id="plays">0</span>
+              <small>Plays</small>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="stage">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="gameType">Strategy</p>
+            <h2 id="gameTitle">Circuit Duel</h2>
+          </div>
+          <button class="ghost-button" id="resetGame" type="button">Reset</button>
+        </header>
+
+        <section class="game-shell">
+          <div class="game-board" id="gameBoard"></div>
+          <aside class="intel-panel">
+            <h3>AI Intel</h3>
+            <p id="gameIntel"></p>
+            <div class="status-box">
+              <span>Status</span>
+              <strong id="statusText">Ready</strong>
+            </div>
+          </aside>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
